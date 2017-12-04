@@ -2,6 +2,7 @@
 $colorLight: rgb(255, 255, 255);
 $colorAccent: #1B957F;
 $colorBgMenu: #000;
+$colorBgSection: rgb(211, 211, 211);
 
 * {
     box-sizing: border-box;
@@ -22,6 +23,10 @@ a {
     // border: 1px solid red;
 }
 
+/* ************************************************************** */
+/* ******** Navi */
+/* ************************************************************** */
+
 .main-nav {
     background-color: $colorBgMenu;
 
@@ -29,7 +34,7 @@ a {
         color:$colorLight;
     }
 
-    .main-nav-grid {
+    .main-nav-belt {
         height: 40px; 
         display: flex;
         justify-content: space-between;   
@@ -51,7 +56,7 @@ a {
         a {
             color:$colorLight;
         }
-
+        
         li {
             display: inline-block;
             margin-left: 20px;
@@ -77,5 +82,60 @@ a {
 
         }
     }
+
+}
+
+.header {
+    background: yellow;
+
+    .header-hero-area {
+
+        background-color: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-slider-container {
+        background-color: blue;
+        width: 950px;
+        height: 500px;
+    }
+
+    .header-slider-btn-prv, .header-slider-btn-nxt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+        width: 50px;
+
+    }
+}
+
+.section-grid {
+    display: flex;
+    margin: 0 -10px;
+    background-color: burlywood;
+    
+    .col1-3 {
+        width: 33.33333%;
+        padding: 20px 10px;
+    }
+
+    .col2-3 {
+        width: 66.66666%;
+        padding: 20px 10px;
+    }
+
+    .cont {
+        display: block;
+        height: 255px;
+        background-color: yellowgreen;
+    }
+
+}
+
+.section-pricelist {
+background-color: $colorBgSection;
 
 }

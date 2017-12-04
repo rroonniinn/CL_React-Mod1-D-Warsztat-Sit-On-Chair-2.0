@@ -61,7 +61,6 @@ a {
         }
     }
 
-    //do przepracowania:
     .main-nav-menu-sub {
         
         display: none;
@@ -71,7 +70,11 @@ a {
         background: $colorAccent;
         
         li {
+            display: block;
             padding: 10px 20px;
+            margin-left: 0;
+            text-transform: none;            
+
         }
     }
 

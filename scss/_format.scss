@@ -1,0 +1,78 @@
+
+$colorLight: rgb(255, 255, 255);
+$colorAccent: #1B957F;
+$colorBgMenu: #000;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1050px;
+    margin: 0 auto;
+    // border: 1px solid red;
+}
+
+.main-nav {
+    background-color: $colorBgMenu;
+
+    a {
+        color:$colorLight;
+    }
+
+    .main-nav-grid {
+        height: 40px; 
+        display: flex;
+        justify-content: space-between;   
+        align-items: center;
+    }
+    
+    .main-nav-logo {
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+
+        span {
+           color: $colorAccent; 
+           font-weight: 800;
+        }   
+    }
+
+    .main-nav-menu {
+        position: relative;
+        a {
+            color:$colorLight;
+        }
+
+        li {
+            display: inline-block;
+            margin-left: 20px;
+            letter-spacing: 0.0rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+
+    //do przepracowania:
+    .main-nav-menu-sub {
+        
+        display: none;
+        position: absolute;
+        top:40px;
+        left: 0px;
+        background: $colorAccent;
+        
+        li {
+            padding: 10px 20px;
+        }
+    }
+
+}

@@ -1,0 +1,35 @@
+/* ************************************************************** */
+/* ******** Main cotainer */
+/* ************************************************************** */
+
+.site-container {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+/* ************************************************************** */
+/* ******** Basic grid */
+/* ************************************************************** */
+
+.grid {
+    display: flex;
+    margin: 0 -10px;
+    background-color: burlywood;
+    
+    .col1-3 {
+        width: 33.33333%;
+        padding: 20px 10px;
+    }
+
+    .col2-3 {
+        width: 66.66666%;
+        padding: 20px 10px;
+    }
+
+    .cont {
+        display: block;
+        height: 255px;
+        background-color: yellowgreen;
+    }
+
+}

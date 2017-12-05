@@ -62,17 +62,37 @@ body {
 /* ************************************************************** */
 
 .header {
-    background: yellow;
+    background: $colorBgMenuGrad;
 
     .header-hero-area {
-        background-color: red;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
+    .header-slider-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+    }    
+    
+    .arrow {
+        fill: $colorAccent;
+        transform-origin: 50% 50%;
+    }
+    .arrow-left {            
+        transform: scaleX(0.6) scaleY(0.6);
+
+    }
+    .arrow-right {
+        transform: scaleX(-0.6) scaleY(0.6);
+    }
+
+
     .header-slider-container {
-        background-color: blue;
+        // background-color: blue;
         width: 950px;
         height: 500px;
         position: relative;
@@ -85,7 +105,7 @@ body {
             position: absolute;
             top: 10px;
             left: 10px;
-            border: 1px solid orange;
+            // border: 1px solid orange;
 
             span {
                 display: block;
@@ -107,14 +127,6 @@ body {
         }
     }
 
-    .header-slider-btn-prv, .header-slider-btn-nxt {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: pink;
-        width: 50px;
-
-    }
 }
 
 .section-pricelist {

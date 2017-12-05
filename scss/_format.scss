@@ -1,5 +1,15 @@
+
 body {
     @include fontBasic ();
+    line-height: 1.2rem;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.1em;
 }
 
 /* ************************************************************** */
@@ -129,7 +139,235 @@ body {
 
 }
 
+/* ************************************************************** */
+/* ******** Imgs area */
+/* ************************************************************** */
+
+.section-imgs {
+
+    .img-box {
+        position: relative;
+    
+
+    }
+
+    .txt-box {
+        display: block;
+        min-height: 100%;
+        padding: 20px 20px;
+        border: 1px solid $colorBorder;
+
+        h3 {
+            margin-bottom: 15px;
+        }
+
+    }
+
+    .highlight {
+        background-color: rgba($colorBgHighlight, 0.8);
+        position: absolute;
+        top: 130px;
+        left: 0px;
+        height: 70px;
+        width: 100%;
+        padding: 20px 20px;
+        border-left: 1px solid $colorBorder;
+        border-right: 1px solid $colorBorder;
+    }
+
+    h3 {
+        font-weight: 600;
+
+        &::after {
+            content: '';
+            background-color: $colorAccent;
+            display: block;
+            width: 150px;
+            height: 4px;
+            margin-top: 4px;
+
+        }
+
+        span {
+            text-transform: uppercase;
+        }
+    }
+    
+    .img {
+        width: 100%;
+        height: auto;
+        border: 1px solid $colorBorder;
+
+    }
+
+
+}
+
+/* ************************************************************** */
+/* ******** Pricelist area */
+/* ************************************************************** */
+
+
 .section-pricelist {
 background-color: $colorBgSection;
+padding-top: 20px;
+
+    h2 {
+        @include hHiglighted (600,150px);
+        text-transform: uppercase;
+    }
+
+    .priceList-box {
+        
+        height: 550px;
+        background-color: $colorBgHighlight;
+        position: relative;
+        margin-top: 40px;
+        padding-top: 40px;
+        border-radius: 4px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top:0;
+            left:50%;
+            transform: translate(-50%, -50%);
+            background-color: $colorBgHighlight;
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;    
+            border: 1px solid $colorBorder;    
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top:-30px;
+            left:50%;
+            transform: translate(-50%, 50%);
+            background-color: $colorBorder;
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;    
+            z-index: 1;
+        }
+    }
+
+    .box-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        color: $colorAccent;
+    }
+
+    .price-circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 1px solid $colorBorder;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 30px;
+
+        .price-big {
+            font-size: 40px;
+            font-weight: 800;
+            color: $colorBorder;            
+        }
+
+        .price-small {
+            position: absolute;
+            font-weight: 800;
+            color: $colorBorder;
+            top: 20px;
+            left: 80px;
+        }
+
+        .price-info {
+            margin-top: 5px;
+            font-weight: 700;
+            color: $colorBorder;
+            text-transform: uppercase;
+        }
+
+    }
+    
+    ul {
+        width: 100%;
+        margin-top: 20px;
+        height: 200px;
+    }
+
+    .price-desc-opt-a li  {
+        background-color: rgba($colorBorder, 0.5);
+        text-align: center;
+        padding: 10px 0;
+        font-size: 18px;
+
+        &:nth-child(2n+1) {
+            background-color: $colorBorder;
+        }    
+    }
+
+    .price-desc-opt-b li  {
+        background-color: rgba($colorBorder, 0.5);
+        text-align: center;
+        padding: 10px 0;
+        font-size: 18px;
+
+        &:nth-child(2n) {
+            background-color: $colorBorder;
+        }    
+    }
+
+    .btn {
+        background: $colorAccent;
+        display: block;
+        padding: 7px 30px;
+        text-transform: uppercase;
+        color: $colorLightOnDark;
+        border-radius: 6px;
+    }
+
+
+}
+
+
+
+
+/* ************************************************************** */
+/* ******** Contact */
+/* ************************************************************** */
+
+.section-contact {
+padding-top: 20px;
+
+    h2 {
+        @include hHiglighted (600,150px);
+        text-transform: uppercase;
+    }
+
+}
+
+
+/* ************************************************************** */
+/* ******** Footer */
+/* ************************************************************** */
+
+.footer {
+    padding-top: 20px;
 
 }

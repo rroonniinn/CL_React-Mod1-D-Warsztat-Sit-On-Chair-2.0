@@ -3,3 +3,18 @@
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
 }
+
+@mixin hHiglighted ($weight, $width) {
+
+    font-weight: $weight;
+
+        &::after {
+            content: '';
+            background-color: $colorAccent;
+            display: block;
+            width: $width;
+            height: 4px;
+            margin-top: 4px;
+
+        }
+}

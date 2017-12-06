@@ -1,9 +1,18 @@
 /* ************************************************************** */
-/* ******** Main cotainer */
+/* ******** Vars */
+/* ************************************************************** */
+
+$widthMain: 950px;
+$gapVerticalMain: 20px;
+$gapHorizontalMain: 20px;
+
+/* ************************************************************** */
+/* ******** Main container */
 /* ************************************************************** */
 
 .site-container {
-    width: 1050px;
+    // width: 1050px;
+    width: $widthMain;
     margin: 0 auto;
 }
 
@@ -13,23 +22,80 @@
 
 .grid {
     display: flex;
-    margin: 0 -10px;
-    // background-color: burlywood;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: - ($gapVerticalMain / 2);
+    margin-left:  - ($gapVerticalMain / 2);
+    
     
     .col1-3 {
         width: 33.33333%;
-        padding: 20px 10px;
+        padding: $gapHorizontalMain ($gapVerticalMain / 2);
     }
 
     .col2-3 {
         width: 66.66666%;
-        padding: 20px 10px;
+        padding: $gapHorizontalMain ($gapVerticalMain / 2);
     }
 
-    .cont {
-        display: block;
-        // height: 255px;
-        background-color: yellowgreen;
+    .col1-2 {
+        width: 50%;
+        padding: $gapHorizontalMain ($gapVerticalMain / 2);
     }
 
 }
+
+/* ************************************************************** */
+/* ******** Slider */
+/* ************************************************************** */
+
+
+.main-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-slider-btn-area {
+    // background-color: pink;
+    width: 50px;
+    height: 100%;
+}
+
+.header-slider-container {
+    // background-color: blue;
+    width: 850px;
+    height: 500px;
+    position: relative;
+    // border: 1px solid red;        
+
+}
+
+.slider {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 480px;
+    width: 830px;
+    display: flex;
+    // border: 1px solid orange;
+}
+
+.slide-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: red;
+    width: 50%;
+}
+
+.slide-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // background-color: pink;
+    width: 50%;
+}
+
+

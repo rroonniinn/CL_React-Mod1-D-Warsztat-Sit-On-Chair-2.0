@@ -74,70 +74,75 @@ h2 {
 .header {
     background: $colorBgMenuGrad;
 
-    .header-hero-area {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+}
 
-    .header-slider-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        background-color: transparent;
-    }    
-    
+/* ************************************************************** */
+/* ******** Slider */
+/* ************************************************************** */
+
+
+// Buttons
+
+.main-slider-nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    // border: 1px solid blue;
+    width: 100%;
+    height: 100%;      
+
     .arrow {
         fill: $colorAccent;
         transform-origin: 50% 50%;
     }
     .arrow-left {            
-        transform: scaleX(0.6) scaleY(0.6);
+        transform: scaleX(0.7) scaleY(0.7);
 
     }
     .arrow-right {
-        transform: scaleX(-0.6) scaleY(0.6);
+        transform: scaleX(-0.7) scaleY(0.7);
     }
-
-
-    .header-slider-container {
-        // background-color: blue;
-        width: 950px;
-        height: 500px;
-        position: relative;
-
-        /* ************************************************************** */
-        /* ******** Slider */
-        /* ************************************************************** */
-
-        .slider {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            // border: 1px solid orange;
-
-            span {
-                display: block;
-                height: 480px;
-                width: 930px;
-            }
-        }
-
-        .slider-01 {
-            
-        }
-        .slider-02 {
-            z-index: 0;
-            display: none;
-        }
-        .slider-03 {
-            z-index: 0;
-            display: none;
-        }
-    }
-
 }
+
+// Slider 
+    
+.slider {
+    span {
+        color: $colorAccent;                 
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    p {
+        text-align: center;
+        padding: 0 30px;
+        margin-bottom: 30px;
+    }
+
+    a {
+        display: block;
+        background-color: $colorAccent;
+        color: $colorLightOnDark;
+        padding: 15px 40px;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+    
+}
+
+.slider-hidden {
+    display: none;
+}
+
+
+
 
 /* ************************************************************** */
 /* ******** Imgs area */

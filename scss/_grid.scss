@@ -1,17 +1,9 @@
-/* ************************************************************** */
-/* ******** Vars */
-/* ************************************************************** */
-
-$widthMain: 950px;
-$gapVerticalMain: 20px;
-$gapHorizontalMain: 20px;
 
 /* ************************************************************** */
 /* ******** Main container */
 /* ************************************************************** */
 
 .site-container {
-    // width: 1050px;
     width: $widthMain;
     margin: 0 auto;
 }
@@ -22,8 +14,8 @@ $gapHorizontalMain: 20px;
 
 .grid {
     display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-right: - ($gapVerticalMain / 2);
     margin-left:  - ($gapVerticalMain / 2);
     
@@ -42,7 +34,6 @@ $gapHorizontalMain: 20px;
         width: 50%;
         padding: $gapHorizontalMain ($gapVerticalMain / 2);
     }
-
 }
 
 /* ************************************************************** */
@@ -56,36 +47,30 @@ $gapHorizontalMain: 20px;
     align-items: center;
 }
 
-.header-slider-btn-area {
-    // background-color: pink;
-    width: 50px;
+.main-slider-nav {
+    width: $silderNavWidth;
     height: 100%;
 }
 
-.header-slider-container {
-    // background-color: blue;
-    width: 850px;
-    height: 500px;
+.header-slider-container {    
+    width: $widthMain - (2 * ($silderNavWidth));
+    height: $sliderHeight;
     position: relative;
-    // border: 1px solid red;        
-
 }
 
 .slider {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    height: 480px;
-    width: 830px;
+    top: $sliderContentVerticalMargin;
+    left: $sliderContentHorizontalMargin;
+    height: $sliderHeight - (2 * $sliderContentVerticalMargin);
+    width: $widthMain - (2* $silderNavWidth) - (2* $sliderContentHorizontalMargin);
     display: flex;
-    // border: 1px solid orange;
 }
 
 .slide-img {
     display: flex;
     align-items: center;
     justify-content: center;
-    // background-color: red;
     width: 50%;
 }
 
@@ -94,7 +79,6 @@ $gapHorizontalMain: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // background-color: pink;
     width: 50%;
 }
 

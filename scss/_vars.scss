@@ -1,0 +1,148 @@
+/* ************************************************************** */
+/* ******** Sets */
+/* ************************************************************** */
+
+// Colors
+$color1: white;
+$color2: rgb(220, 220, 220);
+$color3: rgb(223, 223, 223);
+$color4:  rgb(43, 190, 163);
+$color5: black;
+$color6: linear-gradient(180deg, $color1 70%, $color2 100%);
+$color7: rgb(190, 190, 190);
+
+//Font weight:
+$fontWeightThin: 400;
+$fontWeightRegular: 600;
+$fontWeightStrong: 800;
+
+//Fonts size:
+$fontsSize1: 40px;
+$fontsSize2: 20px;
+$fontsSize3: 16px;
+
+
+// Font Spacing
+$spacingBigger: 1px;
+
+// Border radius:
+$bRadius1: 5px;
+
+
+/* ************************************************************** */
+/* ******** Size */
+/* ************************************************************** */
+
+$widthMain: 1000px;
+$gapVerticalMain: 20px;
+$gapHorizontalMain: 20px;
+$mainNavHeight: 40px;
+
+// Slider
+$silderNavWidth: 50px;
+$sliderHeight: 400px;
+$sliderContentVerticalMargin: 10px;
+$sliderContentHorizontalMargin: 10px;
+$sliderHeaderFont: 30px;
+
+//Main menu
+$mainMenuMargin: 20px;
+
+//Main Submenu:
+$positionTop: 40px;
+$positionLeft: 0px;
+$subMenuPaddingT: 15px;
+$subMenuPaddingR: 30px;
+$subMenuPaddingB: 15px;
+$subMenuPaddingL: 30px;
+
+/* ************************************************************** */
+/* ******** Hero */
+/* ************************************************************** */
+
+// Healine:
+$heroHeader: $fontsSize1;
+$heroHeaderFontWeight: $fontWeightRegular; 
+$heroHeaderUnderSpace: 30px;
+
+/* ************************************************************** */
+/* ******** Pricelist */
+/* ************************************************************** */
+
+$headerPriceListSection: $fontsSize2;
+$headerPriceListBox: $fontsSize2;
+$priceSize:$fontsSize1;
+$priceWeight:$fontWeightStrong;
+
+
+/* ************************************************************** */
+/* ******** Contact */
+/* ************************************************************** */
+
+$headerContactSection: $fontsSize2;
+
+
+
+/* ************************************************************** */
+/* ******** Colors */
+/* ************************************************************** */
+
+
+
+
+
+// Font colors
+$colorLightOnDark: rgb(255, 255, 255);
+$colorAccent: rgb(43, 190, 163);
+
+
+// Borders
+$colorBorder: #CACDD4;
+
+// Backgrounds
+$colorBgMenu: #000;
+$colorBgSection: rgb(211, 211, 211);
+$colorBgHighlight: rgb(255, 255, 255);
+
+
+/* ************************************************************** */
+/* ******** Fonts */
+/* ************************************************************** */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 1.2rem;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+h1 {
+
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+/* ************************************************************** */
+/* ******** Mixins */
+/* ************************************************************** */
+
+
+@mixin hHiglighted ($weight, $width) {
+    
+        font-weight: $weight;
+    
+            &::after {
+                content: '';
+                background-color: $colorAccent;
+                display: block;
+                width: $width;
+                height: 4px;
+                margin-top: 4px;
+    
+            }
+    }

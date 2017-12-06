@@ -161,9 +161,6 @@
                         <a href="" class="btn btn-a">Dołącz</a>                               
                     </div>
                 </div>
-
-
-
             </div>    
         </div>            
         </div>
@@ -172,17 +169,51 @@
     <!-- Contact area -->    
     <section class="section-contact site-container">
         <h2>Kontakt</h2>
+        <form action="">
         <div class="grid">
-            <div class="col2-3"><span class="cont">1</span></div>
-            <div class="col1-3"><span class="cont">2</span></div>
-        </div>            
+            <div class="col2-3">
+                <div class="section-contact-left">                
+                    <label for="name">Imię</label>
+                    <input type="text" name="name" placeholder="Imię">
+                    <label for="email">email</label>
+                    <input type="text" name="email" placeholder="email">
+                    <label for="wiadomosc">Wiadomość</label>                    
+                    <textarea name="wiadomosc" placeholder="Wiadomość"></textarea>
+            </div>
+            </div>
+            <div class="col1-3">
+                <div class="section-contact-right">
+                    <span class="checkbox">
+                    <input type="checkbox" name="checkbox" id="agreement">
+                    <p>Zgadzam się na prztwarzanie danych osobowych</p> 
+                    </span>
+
+                    <input type="submit" value="wyślij">   
+            </div>            
+            </div>
+        </div>    
+    </form>        
     </section>
 
     <!-- Footer area -->    
     <footer class="footer site-container">
         <div class="grid">
-            <div class="col2-3">Copyright</div>
-            <div class="col1-3">Ikony</div>
+            <div class="col2-3">
+            <span class="left-corner">
+                Copyright 2014 | All Rights Reserved. - Sit On chair
+            </span>
+            </div>
+            <div class="col1-3">
+                 <span class="right-corner">
+                <ul>
+                    <li><a href=""><img src="../images/flickr.png" alt="" class="ftr-img"></a></li>
+                    <li><a href=""><img src="../images/vimeo.png" alt="" class="ftr-img"></a></li>
+                    <li><a href=""><img src="../images/pinterest.png" alt="" class="ftr-img"></a></li>
+                    <li><a href=""><img src="../images/twitter.png" alt="" class="ftr-img"></a></li>    
+                </ul>        
+                 <span class="logo">Sit <span>on</span> Chair</span>
+                </span>
+            </div>
         </div>            
     </footer>
 

@@ -52,12 +52,15 @@
             color: $color4;
         }
 
-         li:hover .sub-hidden {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(10px);
-        }                
+        // Hover do pokazywania menu za pomocą CSS (zakomentowany gdyż kazano nam użyć JS...
+
+        //  li:hover .sub-hidden {
+        //     opacity: 1;
+        //     visibility: visible;
+        //     transform: translateY(10px);
+        // }                
     }
+
 
     .main-nav-menu-sub {
         position: absolute;
@@ -161,8 +164,15 @@
 // Slider 
     
 .slider {
+
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s all;
+
+
     span {
-        color: $color4;                 
+        color: $color4;   
+    
     }
 
     h2 {
@@ -194,7 +204,9 @@
 }
 
 .slider-hidden {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(50px);
 }
 
 
